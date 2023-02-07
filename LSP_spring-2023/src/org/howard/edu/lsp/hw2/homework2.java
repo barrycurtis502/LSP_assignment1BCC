@@ -15,6 +15,12 @@ public class homework2 {
 		Scanner txtFile = new Scanner(new File("C:\\Users\\barry\\git\\LSP_assignment1BCC\\LSP_spring-2023\\test.txt"));
 		while (txtFile.hasNext ()) {
 			String word = txtFile.next();
+			word = word.toLowerCase();
+
+
+			if (word.length() <= 3) {
+				continue;
+			}
 			if (map.containsKey(word)) {
 				int count = map.get(word) +1;
 				map.put(word,  count);
