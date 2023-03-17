@@ -157,6 +157,9 @@ public class IntegerSet {
         }
         return false;
     };
+    public void setSet(List<Integer> set) {
+        this.set = set;
+    }
 
     public String toString() {
         return "IntegerSet{" + "set=" + set + '}';
